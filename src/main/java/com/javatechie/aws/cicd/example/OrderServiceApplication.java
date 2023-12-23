@@ -20,7 +20,7 @@ public class OrderServiceApplication {
 
     @GetMapping
     public String fetchOrders() {
-        return "Order service up and running";
+        return "Order service up and running 2";
     }
 
     public static void main(String[] args) {
