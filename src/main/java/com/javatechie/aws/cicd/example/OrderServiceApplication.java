@@ -16,13 +16,11 @@ import java.util.stream.Collectors;
 @RequestMapping("/orders")
 public class OrderServiceApplication {
 
-    @Autowired
-    private OrderDao orderDao;
+
 
     @GetMapping
-    public List<Order> fetchOrders() {
-        return orderDao.getOrders().stream().
-                sorted(Comparator.comparing(Order::getPrice)).collect(Collectors.toList());
+    public String fetchOrders() {
+        return "Order service up and running";
     }
 
     public static void main(String[] args) {
